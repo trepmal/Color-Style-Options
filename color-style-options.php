@@ -205,8 +205,8 @@ class Color_Style_Options {
 
 		wp_nonce_field( __FILE__, 'cso_meta_save');
 
-		$pairs = get_option( 'color_style_options', array() );
-		if (empty( $pairs )) return;
+		$pairs = get_option( 'color_style_options', false );
+		if ( ! $pairs ) return;
 
 		wp_enqueue_script('wp-color-picker');
 		wp_enqueue_style('wp-color-picker');

@@ -6,3 +6,11 @@ Easily allow for per-post custom styles. Admin creates the rules, writers can ju
 Screencast*: https://www.youtube.com/watch?v=mjlelOvAUOs
 
 *it's from a slightly earlier development version
+
+To enable on pages (or other post types)
+----------------------------------------
+`add_filter( 'cso_screens', 'enable_cso_on_pages' );
+function enable_cso_on_pages( $screens ) {
+	$screens[] = 'page';
+	return $screens;
+}`
