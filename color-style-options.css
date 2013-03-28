@@ -1,0 +1,18 @@
+.remove {
+	cursor: pointer;
+}
+.cso_name {
+	padding-bottom: 4px;
+}
+.cso_style {
+	width: 300px;
+	vertical-align: middle;
+}
+.cso_style:not([readonly=readonly]) {
+	font-family: Courier, monospace;
+}
+.cso_name.heading,
+.cso_style.heading {
+	background: transparent;
+	border: 0;
+}
